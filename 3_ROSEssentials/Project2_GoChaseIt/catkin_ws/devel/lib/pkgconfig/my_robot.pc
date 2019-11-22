@@ -1,0 +1,8 @@
+prefix=/home/workspace/3_ROSEssentials/Project2_GoChaseIt/catkin_ws/devel
+
+Name: my_robot
+Description: Description of my_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/workspace/3_ROSEssentials/Project2_GoChaseIt/catkin_ws/devel/lib 
+Requires: 
