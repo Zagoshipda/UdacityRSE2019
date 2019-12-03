@@ -68,6 +68,27 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -90,15 +111,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target install/strip
+install/strip/fast: install/strip
 
-.PHONY : list_install_components/fast
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -110,28 +132,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,21 +166,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-gtest/gtest/CMakeFiles/gtest.dir/rule:
-	cd /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest.dir/rule
-.PHONY : gtest/gtest/CMakeFiles/gtest.dir/rule
-
-# Convenience name for target.
-gtest: gtest/gtest/CMakeFiles/gtest.dir/rule
-
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	cd /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build && $(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-# Convenience name for target.
 gtest/gtest/CMakeFiles/gtest_main.dir/rule:
 	cd /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest_main.dir/rule
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/rule
@@ -194,6 +179,21 @@ gtest_main: gtest/gtest/CMakeFiles/gtest_main.dir/rule
 gtest_main/fast:
 	cd /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build && $(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+# Convenience name for target.
+gtest/gtest/CMakeFiles/gtest.dir/rule:
+	cd /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/gtest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: gtest/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	cd /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build && $(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 src/gtest-all.o: src/gtest-all.cc.o
 
@@ -256,14 +256,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... test"
+	@echo "... gtest_main"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... test"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... src/gtest-all.o"
 	@echo "... src/gtest-all.i"
 	@echo "... src/gtest-all.s"

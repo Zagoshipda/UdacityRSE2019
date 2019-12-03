@@ -17,6 +17,16 @@
     <!-- Initial pose -->
     <param name="initial_pose_x" value="0"/>
     <param name="initial_pose_y" value="0"/>
+    <param name="initial_pose_a" value="-1.5708"/>
+
+    <!-- a range of the number of particles as an input -->
+    <param name="min_particles" value="30" />
+    <param name="max_particles" value="300" />
+
+    <!-- transitional & rotational movement required before performing a filter update -->
+    <param name="update_min_d" value="0.1" />
+    <param name="update_min_a" value="0.087" />
+
   </node>
 
   <!-- Move Base Node : ROS Navigation Stack -->
