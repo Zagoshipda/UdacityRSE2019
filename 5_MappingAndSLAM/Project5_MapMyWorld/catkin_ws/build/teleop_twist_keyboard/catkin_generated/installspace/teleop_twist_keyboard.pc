@@ -1,8 +1,8 @@
-prefix=/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/install
+prefix=/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/install
 
 Name: teleop_twist_keyboard
 Description: Description of teleop_twist_keyboard
 Version: 0.6.2
 Cflags: 
-Libs: -L/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/install/lib 
+Libs: -L/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/install/lib 
 Requires: 

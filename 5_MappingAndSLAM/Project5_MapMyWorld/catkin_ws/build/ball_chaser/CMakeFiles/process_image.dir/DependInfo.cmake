@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/src/ball_chaser/src/process_image.cpp" "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build/ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.o"
+  "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/src/ball_chaser/src/process_image.cpp" "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/build/ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel/include"
+  "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

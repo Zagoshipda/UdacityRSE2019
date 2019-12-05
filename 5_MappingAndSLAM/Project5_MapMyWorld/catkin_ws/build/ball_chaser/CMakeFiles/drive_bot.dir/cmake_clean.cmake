@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/drive_bot.dir/src/drive_bot.cpp.o"
-  "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel/lib/ball_chaser/drive_bot.pdb"
-  "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel/lib/ball_chaser/drive_bot"
+  "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel/lib/ball_chaser/drive_bot.pdb"
+  "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel/lib/ball_chaser/drive_bot"
 )
 
 # Per-language clean rules from dependency scanning.

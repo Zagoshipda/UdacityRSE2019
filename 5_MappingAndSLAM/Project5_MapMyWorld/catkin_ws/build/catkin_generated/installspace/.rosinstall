@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/install/setup.sh
+    local-name: /home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/install/setup.sh

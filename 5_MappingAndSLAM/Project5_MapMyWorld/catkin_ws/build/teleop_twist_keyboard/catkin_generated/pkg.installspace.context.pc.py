@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "teleop_twist_keyboard"
-PROJECT_SPACE_DIR = "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/install"
 PROJECT_VERSION = "0.6.2"

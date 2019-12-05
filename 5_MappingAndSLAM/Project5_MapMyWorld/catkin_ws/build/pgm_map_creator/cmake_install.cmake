@@ -1,8 +1,8 @@
-# Install script for directory: /home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/src/pgm_map_creator
+# Install script for directory: /home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/src/pgm_map_creator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,23 +33,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creator.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creator.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pgm_map_creator/cmake" TYPE FILE FILES
-    "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig.cmake"
-    "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig-version.cmake"
+    "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig.cmake"
+    "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pgm_map_creator" TYPE FILE FILES "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/src/pgm_map_creator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pgm_map_creator" TYPE FILE FILES "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/src/pgm_map_creator/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build/pgm_map_creator/msgs/cmake_install.cmake")
+  include("/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/build/pgm_map_creator/msgs/cmake_install.cmake")
 
 endif()
 

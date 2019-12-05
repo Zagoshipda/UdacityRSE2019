@@ -1,8 +1,8 @@
-prefix=/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel
+prefix=/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel
 
 Name: ball_chaser
 Description: Description of ball_chaser
 Version: 0.0.0
-Cflags: -I/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel/include
-Libs: -L/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel/lib 
+Cflags: -I/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel/include
+Libs: -L/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel/lib 
 Requires: 

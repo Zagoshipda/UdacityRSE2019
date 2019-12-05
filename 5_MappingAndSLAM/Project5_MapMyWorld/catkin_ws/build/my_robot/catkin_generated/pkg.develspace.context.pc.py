@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "my_robot"
-PROJECT_SPACE_DIR = "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/devel"
 PROJECT_VERSION = "0.0.0"

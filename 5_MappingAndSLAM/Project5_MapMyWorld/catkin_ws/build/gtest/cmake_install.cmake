@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/workspace/4_Localization/Project4_WhereAmI/catkin_ws/build/gtest/gtest/cmake_install.cmake")
+  include("/home/workspace/5_MappingAndSLAM/Project5_MapMyWorld/catkin_ws/build/gtest/gtest/cmake_install.cmake")
 
 endif()
 
