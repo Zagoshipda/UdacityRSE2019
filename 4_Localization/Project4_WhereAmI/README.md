@@ -20,9 +20,9 @@ Robotics Software Engineer Nanodegree Program 2019 at Udacity
 
 - source devel/setup.bash
 
-- roslaunch <package name> world.launch
+- roslaunch \<package name\> world.launch
 
-- roslaunch <package name> amcl.launch
+- roslaunch \<package name\> amcl.launch
 
 - rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 

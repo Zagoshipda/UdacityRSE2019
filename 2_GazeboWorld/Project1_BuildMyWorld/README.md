@@ -20,11 +20,11 @@ Robotics Software Engineer Nanodegree Program 2019 at Udacity
 
 - cmake ../ && make
 
-- export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:<path>/build
+- export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:\<path\>/build
 
-- cd /world/ && gazebo <world name>
+- cd /world/ && gazebo \<world name\>
 
-- Troubleshooting : gazebo <world name> --verbose
+- Troubleshooting : gazebo \<world name\> --verbose
 
 
  <br/><br/>

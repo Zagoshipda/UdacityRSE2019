@@ -20,11 +20,11 @@ Robotics Software Engineer Nanodegree Program 2019 at Udacity
 
 - source devel/setup.bash
 
-- roslaunch <package name> world.launch
+- roslaunch \<package name\> world.launch
 
 - rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
-- roslaunch <package name> mapping.launch
+- roslaunch \<package name\> mapping.launch
 
 - rtabmap-databaseViewer ~/.ros/rtabmap.db
 

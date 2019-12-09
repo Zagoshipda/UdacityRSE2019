@@ -20,9 +20,9 @@ Robotics Software Engineer Nanodegree Program 2019 at Udacity
 
 - source devel/setup.bash
 
-- roslaunch <package name> world.launch
+- roslaunch \<package name\> world.launch
 
-- roslaunch <package name> ball_chaser.launch
+- roslaunch \<package name\> ball_chaser.launch
 
 - rosrun rqt_image_view rqt_image_view
 
