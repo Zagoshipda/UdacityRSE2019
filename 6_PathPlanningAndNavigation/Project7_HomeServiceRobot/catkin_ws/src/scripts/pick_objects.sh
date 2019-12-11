@@ -11,4 +11,4 @@ sleep 5
 xterm -e " roslaunch turtlebot_rviz_launchers view_navigation.launch " &
 sleep 5
 
-xterm -e " rosrun pick_objects pick_objects.cpp "
+xterm -e " rosrun pick_objects pick_objects "
