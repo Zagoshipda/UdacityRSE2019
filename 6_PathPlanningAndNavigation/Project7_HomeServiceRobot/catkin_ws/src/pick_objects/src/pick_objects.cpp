@@ -23,24 +23,48 @@ int main(int argc, char** argv){
   goal.target_pose.header.frame_id = "map";
   goal.target_pose.header.stamp = ros::Time::now();
 
-  // Define a position and orientation for the robot to reach
-  goal.target_pose.pose.position.x = 1.0;
-  goal.target_pose.pose.orientation.w = 1.0;
+  // [pickup zone] Define a position and orientation for the robot to reach
+  goal.target_pose.pose.position.x = -5.0;
+  goal.target_pose.pose.position.y = -1.5;
+  goal.target_pose.pose.orientation.w = -1.5708;
 
-   // Send the goal position and orientation for the robot to reach
-  ROS_INFO("Sending goal");
+  // Send the goal position and orientation for the robot to reach
+  ROS_INFO("Sending goal. Robot is traveling to the pickup zone");
   ac.sendGoal(goal);
 
   // Wait an infinite time for the results
   ac.waitForResult();
 
-  // Check if the robot reached its goal
+  // Check if the robot reached its goal (pickup zone)
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
-    ROS_INFO("Hooray, the base moved 1 meter forward");
+    ROS_INFO("Hooray, the base reached pickup zone");
 
+    // pause 5 seconds after reaching the pickup zone
+    ros::Duration(5).sleep();
+
+    // [drop off zone] Define a position and orientation for the robot to reach
+    goal.target_pose.pose.position.x = 0.0;
+    goal.target_pose.pose.position.y = 0.0;
+    goal.target_pose.pose.orientation.w = 1.5708;
+
+    // Send the goal position and orientation for the robot to reach
+    ROS_INFO("Sending goal. Robot is traveling to the drop off zone");
+    ac.sendGoal(goal);
+
+    // Wait an infinite time for the results
+    ac.waitForResult();
+
+    // Check if the robot reached its goal (drop off zone) 
+    if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED){
+      ROS_INFO("Hooray, the base reached drop off zone");
+    }
+    else{
+      ROS_INFO("The base failed to reach drop off zone for some reason");
+    }
+      
   }
   else{
-    ROS_INFO("The base failed to move forward 1 meter for some reason");
+    ROS_INFO("The base failed to reach pickup zone for some reason");
     
   }
 
