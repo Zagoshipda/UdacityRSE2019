@@ -8,10 +8,10 @@ sleep 5
 xterm -e " roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/src/my_robot/maps/map.yaml " &
 sleep 5
 
-xterm -e " roslaunch turtlebot_rviz_launchers view_navigation.launch " &
+xterm -e " roslaunch turtlebot_rviz_launchers home_service.launch " &
 sleep 5
 
 xterm -e " rosrun pick_objects pick_objects " &
 sleep 5
 
-xterm -e " rosrun add_markers add_markers "
+xterm -e " rosrun home_service home_service "

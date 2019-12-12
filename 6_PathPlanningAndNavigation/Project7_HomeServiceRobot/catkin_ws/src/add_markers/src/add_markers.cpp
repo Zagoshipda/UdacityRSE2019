@@ -1,16 +1,5 @@
 #include <ros/ros.h>
 #include <visualization_msgs/Marker.h>
-#include "nav_msgs/Odometry.h"
-
-// pickup position, drop off position, robot position
-double pickupx = 1, pickupy = -3;
-double dropoffx = -1, dropoffy = -2;
-double posx = 0, posy = 0;
-
-void callBack(const nav_msgs::Odometry::ConstPtr& msg){
-  posx = msg->pose.pose.position.x;
-  posy = msg->pose.pose.position.y;
-}
 
 int main( int argc, char** argv )
 {
@@ -18,8 +7,6 @@ int main( int argc, char** argv )
   ros::NodeHandle n;
   ros::Rate r(1);
   ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
-  // add_markers node should subscribe to odometry to keep track of robot pose
-  ros::Subscriber odom_sub = n.subscribe("/odom", 1000, callBack);
 
   // Set our initial shape type to be a cube
   uint32_t shape = visualization_msgs::Marker::CUBE;
@@ -42,12 +29,8 @@ int main( int argc, char** argv )
     marker.type = shape;
 
 
-
-    double dist_pickup = 100000000, dist_dropoff = 100000000;
-    double min_dist = 0.4;
-
     ROS_INFO("Publish the marker at the pickup zone");
-    // [1] Initially show the marker at the pickup zone
+    // [1] Publish the marker at the pickup zone
     // Set the marker action.  Options are ADD, DELETE, and new in ROS Indigo: 3 (DELETEALL)
     marker.action = visualization_msgs::Marker::ADD;
 
@@ -61,9 +44,9 @@ int main( int argc, char** argv )
     marker.pose.orientation.w = -1.5708;
 
     // Set the scale of the marker -- 1x1x1 here means 1m on a side
-    marker.scale.x = 0.5;
-    marker.scale.y = 0.5;
-    marker.scale.z = 0.5;
+    marker.scale.x = 1.0;
+    marker.scale.y = 1.0;
+    marker.scale.z = 1.0;
 
     // Set the color -- be sure to set alpha to something non-zero!
     marker.color.r = 0.0f;
@@ -90,19 +73,11 @@ int main( int argc, char** argv )
 
 
 
-    // [2] Hide the marker once your robot reaches the pickup zone
-    // minimum interval 0.5 second
-    ros::Duration(0.5).sleep();
+    // [2] Pause 5 seconds
+    ros::Duration(5).sleep();
 
-    // check every second if the robot is close enough to pickup zone
-    ROS_INFO("pickup zone distance calculating...");
-    while(dist_pickup > min_dist){
-      dist_pickup = sqrt(pow(pickupx - posx, 2) + pow(pickupy - posy, 2));
-      // std::cout << dist_pickup << std::endl;
-      ros::spinOnce();
-      ros::Duration(1).sleep();
-    }
     ROS_INFO("Hide the marker");
+    // [3] Hide the marker
     marker.action = visualization_msgs::Marker::DELETEALL;
     marker_pub.publish(marker);
     ros::spinOnce();
@@ -128,12 +103,11 @@ int main( int argc, char** argv )
 
 
 
-    // [3] Wait 5 seconds to simulate a pickup
+    // [4] Pause 5 seconds
     ros::Duration(5).sleep();
 
-
-
-    // [4] Show the marker at the drop off zone once your robot reaches it 
+    ROS_INFO("Publish the marker at the drop off zone");
+    // [5] Publish the marker at the drop off zone
     // Set the marker action.  Options are ADD, DELETE, and new in ROS Indigo: 3 (DELETEALL)
     marker.action = visualization_msgs::Marker::ADD;
 
@@ -146,20 +120,6 @@ int main( int argc, char** argv )
     marker.pose.orientation.z = 0.0;
     marker.pose.orientation.w = 1.5708;
 
-    marker.lifetime = ros::Duration();
-
-
-
-    // check every second if the robot is close enough to drop off zone
-    ROS_INFO("drop off zone distance calculating...");
-    while(dist_dropoff > min_dist){
-      dist_dropoff = sqrt(pow(dropoffx - posx, 2) + pow(dropoffy - posy, 2));
-      // std::cout << dist_dropoff << std::endl;
-      ros::spinOnce();
-      ros::Duration(1).sleep();
-    }
-
-    ROS_INFO("Publish the marker at the drop off zone");
     // Publish the marker
     while (marker_pub.getNumSubscribers() < 1)
     {
@@ -175,8 +135,8 @@ int main( int argc, char** argv )
 
 
 
-    ROS_INFO("Simulation terminate...");
-    ros::Duration(10).sleep();
+    ROS_INFO("Terminate...");
+    ros::Duration(3).sleep();
 
     r.sleep();
   }

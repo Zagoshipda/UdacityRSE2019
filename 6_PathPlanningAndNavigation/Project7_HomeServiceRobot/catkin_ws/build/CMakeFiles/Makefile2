@@ -2020,7 +2020,7 @@ clean: ball_chaser/CMakeFiles/_ball_chaser_generate_messages_check_deps_DriveToT
 ball_chaser/CMakeFiles/process_image.dir/all: ball_chaser/CMakeFiles/ball_chaser_generate_messages_cpp.dir/all
 	$(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/depend
 	$(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=27,28 "Built target process_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=29,30 "Built target process_image"
 .PHONY : ball_chaser/CMakeFiles/process_image.dir/all
 
 # Include target in all.
@@ -2047,6 +2047,61 @@ ball_chaser/CMakeFiles/process_image.dir/clean:
 
 # clean rule for target.
 clean: ball_chaser/CMakeFiles/process_image.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory home_service
+
+# Convenience name for "all" pass in the directory.
+home_service/all: home_service/CMakeFiles/home_service.dir/all
+
+.PHONY : home_service/all
+
+# Convenience name for "clean" pass in the directory.
+home_service/clean: home_service/CMakeFiles/home_service.dir/clean
+
+.PHONY : home_service/clean
+
+# Convenience name for "preinstall" pass in the directory.
+home_service/preinstall:
+
+.PHONY : home_service/preinstall
+
+#=============================================================================
+# Target rules for target home_service/CMakeFiles/home_service.dir
+
+# All Build rule for target.
+home_service/CMakeFiles/home_service.dir/all:
+	$(MAKE) -f home_service/CMakeFiles/home_service.dir/build.make home_service/CMakeFiles/home_service.dir/depend
+	$(MAKE) -f home_service/CMakeFiles/home_service.dir/build.make home_service/CMakeFiles/home_service.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=25,26 "Built target home_service"
+.PHONY : home_service/CMakeFiles/home_service.dir/all
+
+# Include target in all.
+all: home_service/CMakeFiles/home_service.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+home_service/CMakeFiles/home_service.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 home_service/CMakeFiles/home_service.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles 0
+.PHONY : home_service/CMakeFiles/home_service.dir/rule
+
+# Convenience name for target.
+home_service: home_service/CMakeFiles/home_service.dir/rule
+
+.PHONY : home_service
+
+# clean rule for target.
+home_service/CMakeFiles/home_service.dir/clean:
+	$(MAKE) -f home_service/CMakeFiles/home_service.dir/build.make home_service/CMakeFiles/home_service.dir/clean
+.PHONY : home_service/CMakeFiles/home_service.dir/clean
+
+# clean rule for target.
+clean: home_service/CMakeFiles/home_service.dir/clean
 
 .PHONY : clean
 
@@ -2314,7 +2369,7 @@ clean: pick_objects/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
 pick_objects/CMakeFiles/pick_objects.dir/all:
 	$(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/depend
 	$(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=25,26 "Built target pick_objects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=27,28 "Built target pick_objects"
 .PHONY : pick_objects/CMakeFiles/pick_objects.dir/all
 
 # Include target in all.
@@ -3995,7 +4050,7 @@ slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: slam_gmapping/gm
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/depend
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=35,36,37 "Built target slam_gmapping_replay"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=37,38,39 "Built target slam_gmapping_replay"
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all
 
 # Include target in all.
@@ -4654,7 +4709,7 @@ slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: slam_gmapping/gmapping/
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: slam_gmapping/gmapping/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/depend
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=29,30,31 "Built target slam_gmapping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=31,32,33 "Built target slam_gmapping"
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all
 
 # Include target in all.
@@ -4691,7 +4746,7 @@ clean: slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/clean
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/all:
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/depend
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/build.make slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=32,33,34 "Built target slam_gmapping_nodelet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=34,35,36 "Built target slam_gmapping_nodelet"
 .PHONY : slam_gmapping/gmapping/CMakeFiles/slam_gmapping_nodelet.dir/all
 
 # Include target in all.
@@ -4778,7 +4833,7 @@ turtlebot_interactions/turtlebot_interactive_markers/preinstall:
 turtlebot_interactions/turtlebot_interactive_markers/CMakeFiles/turtlebot_marker_server.dir/all:
 	$(MAKE) -f turtlebot_interactions/turtlebot_interactive_markers/CMakeFiles/turtlebot_marker_server.dir/build.make turtlebot_interactions/turtlebot_interactive_markers/CMakeFiles/turtlebot_marker_server.dir/depend
 	$(MAKE) -f turtlebot_interactions/turtlebot_interactive_markers/CMakeFiles/turtlebot_marker_server.dir/build.make turtlebot_interactions/turtlebot_interactive_markers/CMakeFiles/turtlebot_marker_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=40,41 "Built target turtlebot_marker_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=42,43 "Built target turtlebot_marker_server"
 .PHONY : turtlebot_interactions/turtlebot_interactive_markers/CMakeFiles/turtlebot_marker_server.dir/all
 
 # Include target in all.
@@ -4934,7 +4989,7 @@ clean: turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_l
 turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/all:
 	$(MAKE) -f turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build.make turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/depend
 	$(MAKE) -f turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build.make turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=42,43 "Built target turtlebot_teleop_joy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=44,45 "Built target turtlebot_teleop_joy"
 .PHONY : turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/all
 
 # Include target in all.
@@ -5125,7 +5180,7 @@ clean: turtlebot/turtlebot_description/CMakeFiles/run_tests_turtlebot_descriptio
 turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/build.make turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/depend
 	$(MAKE) -f turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/build.make turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=38,39 "Built target turtlebot_description_test_urdf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=40,41 "Built target turtlebot_description_test_urdf"
 .PHONY : turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/all
 
 # Build rule for subdir invocation for target.

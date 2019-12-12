@@ -816,6 +816,19 @@ process_image/fast:
 .PHONY : process_image/fast
 
 #=============================================================================
+# Target rules for targets named home_service
+
+# Build rule for target.
+home_service: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 home_service
+.PHONY : home_service
+
+# fast build rule for target.
+home_service/fast:
+	$(MAKE) -f home_service/CMakeFiles/home_service.dir/build.make home_service/CMakeFiles/home_service.dir/build
+.PHONY : home_service/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -2035,6 +2048,7 @@ help:
 	@echo "... ball_chaser_generate_messages_nodejs"
 	@echo "... _ball_chaser_generate_messages_check_deps_DriveToTarget"
 	@echo "... process_image"
+	@echo "... home_service"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
