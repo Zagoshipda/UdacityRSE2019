@@ -52,10 +52,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_stage/catkin_env_hook" TYPE FILE FILES "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/turtlebot_simulator/turtlebot_stage/catkin_generated/installspace/25.turtlebot-stage.sh")
-endif()
-
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot_stage" TYPE DIRECTORY FILES "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/src/turtlebot_simulator/turtlebot_stage/launch")
 endif()
 

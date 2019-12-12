@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServ
 include slam_gmapping/gmapping/CMakeFiles/gmapping_test_replay_crash.bag.dir/progress.make
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_test_replay_crash.bag:
-	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py https://github.com/ros-perception/slam_gmapping_test_data/raw/master/test_replay_crash.bag /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/test_replay_crash.bag bb0e086207eb4fccf0b13d3406f610a1 --ignore-error
+	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py https://github.com/ros-perception/slam_gmapping_test_data/raw/master/test_replay_crash.bag /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/test_replay_crash.bag bb0e086207eb4fccf0b13d3406f610a1 --ignore-error
 
 gmapping_test_replay_crash.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_test_replay_crash.bag
 gmapping_test_replay_crash.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_test_replay_crash.bag.dir/build.make

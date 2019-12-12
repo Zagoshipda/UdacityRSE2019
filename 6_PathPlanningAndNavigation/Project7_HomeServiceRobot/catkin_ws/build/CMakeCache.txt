@@ -293,6 +293,12 @@ actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
 
 //Value Computed by CMake
+add_markers_BINARY_DIR:STATIC=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/add_markers
+
+//Value Computed by CMake
+add_markers_SOURCE_DIR:STATIC=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/src/add_markers
+
+//Value Computed by CMake
 ball_chaser_BINARY_DIR:STATIC=/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/ball_chaser
 
 //Value Computed by CMake
@@ -716,7 +722,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

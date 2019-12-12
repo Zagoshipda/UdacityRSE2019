@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServ
 include slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_groundtruth.pgm.dir/progress.make
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_groundtruth.pgm:
-	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/gmapping/basic_localization_stage_groundtruth.pgm /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/basic_localization_stage_groundtruth.pgm abf208f721053915145215b18c98f9b3 --ignore-error
+	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/gmapping/basic_localization_stage_groundtruth.pgm /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/basic_localization_stage_groundtruth.pgm abf208f721053915145215b18c98f9b3 --ignore-error
 
 gmapping_basic_localization_stage_groundtruth.pgm: slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_groundtruth.pgm
 gmapping_basic_localization_stage_groundtruth.pgm: slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_groundtruth.pgm.dir/build.make

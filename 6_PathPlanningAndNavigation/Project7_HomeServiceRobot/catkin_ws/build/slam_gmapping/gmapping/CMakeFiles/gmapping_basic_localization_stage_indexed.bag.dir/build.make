@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServ
 include slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_indexed.bag.dir/progress.make
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_indexed.bag:
-	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/gmapping/basic_localization_stage_indexed.bag /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/basic_localization_stage_indexed.bag 322a0014f47bcfbb0ad16a317738b0dc --ignore-error
+	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/gmapping/basic_localization_stage_indexed.bag /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/basic_localization_stage_indexed.bag 322a0014f47bcfbb0ad16a317738b0dc --ignore-error
 
 gmapping_basic_localization_stage_indexed.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_indexed.bag
 gmapping_basic_localization_stage_indexed.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_basic_localization_stage_indexed.bag.dir/build.make

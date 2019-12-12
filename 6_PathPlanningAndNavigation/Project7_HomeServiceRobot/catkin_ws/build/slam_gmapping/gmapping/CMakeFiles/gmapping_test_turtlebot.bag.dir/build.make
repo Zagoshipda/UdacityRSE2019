@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServ
 include slam_gmapping/gmapping/CMakeFiles/gmapping_test_turtlebot.bag.dir/progress.make
 
 slam_gmapping/gmapping/CMakeFiles/gmapping_test_turtlebot.bag:
-	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py https://github.com/ros-perception/slam_gmapping_test_data/raw/master/test_turtlebot.bag /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/test_turtlebot.bag 402e1e5f7c00445d2a446e58e3151830 --ignore-error
+	cd /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping && /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py https://github.com/ros-perception/slam_gmapping_test_data/raw/master/test_turtlebot.bag /home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/devel/share/gmapping/test/test_turtlebot.bag 402e1e5f7c00445d2a446e58e3151830 --ignore-error
 
 gmapping_test_turtlebot.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_test_turtlebot.bag
 gmapping_test_turtlebot.bag: slam_gmapping/gmapping/CMakeFiles/gmapping_test_turtlebot.bag.dir/build.make

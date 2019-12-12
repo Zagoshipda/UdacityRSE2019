@@ -68,47 +68,38 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/setup.bash;/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/local_setup.bash")
+   "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install" TYPE FILE FILES
-    "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
-    )
+file(INSTALL DESTINATION "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install" TYPE FILE FILES "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/setup.bash")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/setup.sh;/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/local_setup.sh")
+   "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install" TYPE FILE FILES
-    "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
-    )
+file(INSTALL DESTINATION "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install" TYPE FILE FILES "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/setup.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/setup.zsh;/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/local_setup.zsh")
+   "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install/setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install" TYPE FILE FILES
-    "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
-    )
+file(INSTALL DESTINATION "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/install" TYPE FILE FILES "/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/catkin_generated/installspace/setup.zsh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -139,6 +130,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/turtlebot_simulator/turtlebot_simulator/cmake_install.cmake")
   include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/turtlebot_simulator/turtlebot_stage/cmake_install.cmake")
   include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/turtlebot_simulator/turtlebot_stdr/cmake_install.cmake")
+  include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/add_markers/cmake_install.cmake")
   include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/ball_chaser/cmake_install.cmake")
   include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/pick_objects/cmake_install.cmake")
   include("/home/workspace/6_PathPlanningAndNavigation/Project7_HomeServiceRobot/catkin_ws/build/slam_gmapping/gmapping/cmake_install.cmake")
